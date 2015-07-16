@@ -330,6 +330,7 @@ int main(int argc, char* argv[]) {
       }
       if (isoption(argv[i], 'i', "in-place", &short_opts)) {
         options |= IN_PLACE;
+        options |= NO_COLOUR_OUTPUT;
         if (!short_opts) continue;
       }
       if (isoption(argv[i], 0, "seq", &short_opts)) {
